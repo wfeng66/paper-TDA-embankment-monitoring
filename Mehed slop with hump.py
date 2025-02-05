@@ -76,8 +76,8 @@ class SurfaceWithSmoothCircularHump:
         ax1.set_zlim(self.params['base_height'], self.params['base_height'] + self.params['hump_height'] + 5)
         ax1.set_box_aspect([self.params['length'], self.params['width'], self.params['hump_height']])
         ax1.set_title("Tilted Side View")
-        #ax1.set_xlabel('Length')
-        #ax1.set_ylabel('Width')
+        ax1.set_xlabel('Length')
+        ax1.set_ylabel('Width')
         ax1.set_zlabel('elevation')
 
         # perpendicular view
@@ -89,8 +89,8 @@ class SurfaceWithSmoothCircularHump:
         ax2.set_zlim(self.params['base_height'], self.params['base_height'] + self.params['hump_height'] + 5)
         ax2.set_box_aspect([self.params['length'], self.params['width'], self.params['hump_height']])
         ax2.set_title("Perpendicular Side View")
-        #ax2.set_xlabel('Length')
-        #ax2.set_ylabel('Width')
+        ax2.set_xlabel('Length')
+        ax2.set_ylabel('Width')
         ax2.set_zlabel('elevation')
 
         plt.tight_layout()
